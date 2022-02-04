@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+	Student Name: Kai Moore
+	File Name: contact.html
+	Date: 9/26/21
+-->
+<html lang="en">
+<head>
+	<title>Contact Info | Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="description" content="You can reach me directly via email or (719)214-3119">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Mobile Nav --> 
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href = index.html>Home</a>
+		<a href = education.html>Education</a>
+		<a href = professional.html>Professional</a>
+		<a href = projects.html>Projects</a>
+		<a href = contact.html>Contact</a>
+	</div>
+	<a class="menu-icon" onclick="hamburger()">
+		<div>&#9776;</div>
+	</a>
+</nav>
+
+<header>
+	<h1>Kai Moore</h1>
+	<div class = "tab-desk">
+		<figure>
+			<img src="images/me.jpg" alt="picture of kai moore">
+			<figcaption>&#9979; Exploring the Life of Kai Moore</figcaption>
+		</figure>
+	</div>
+</header>
+
+<nav class = "tab-desk">
+	<ul>
+		<li><a href = index.html>Home</a></li>
+		<li><a href = education.html>Education</a></li> 
+		<li><a href = professional.html>Professional</a></li>
+		<li><a href = projects.html>Projects</a></li>
+		<li><a href = contact.html>Contact</a></li>
+	</ul>
+</nav>
+
+<!-- Use the main area to add the main content to the webpage -->
+<main>
+	<div id = "contact">
+		<p><span class="tel-link round mobile"><a href="tel:719-214-3119">(719) 214-3119</a></span></p>
+		<p class ="tab-desk">(719) 214-3119</p>
+		<p> Personal Email: <span class = "link"><a href = "mailto:kaimoore88@gmail.com">kaimoore88@gmail.com</a></span></p>
+		<p> School Email: <span class = "link"><a href = "mailto:ke.moore1@pack.csupueblo.edu">ke.moore1@pack.csupueblo.edu</a></span></p>
+		<p> Current Educational Institution Address: 2200 Bonforte Blvd, Pueblo, CO 81001</p>
+		<span class = "map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.748431499766!2d-104.57810468443927!3d38.30849597966594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713a3ee2ddd9b4f%3A0x1a76c6856daebb93!2sColorado%20State%20University%20Pueblo!5e0!3m2!1sen!2sus!4v1632698665619!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe></span>
+	</div>
+	<div id = "form">
+		<h2>Complete the form below and I will get back you ASAP.</h2>
+		<form class="form-grid"><!-- Start Form -->
+			<fieldset>
+				<legend>Contact Information</legend>
+
+				<label for="fname">First Name:</label>
+				<input type="text" name="fname" id="fname">
+
+				<label for="lname">Last Name:</label>
+				<input type="text" name="lname" id="lname">
+				
+				<label for="bName">Name of Business (if applicable):</label>
+				<input type="text" name="bname" id="bName">
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email">
+
+				<label for="phone">Phone:</label>
+				<input type="tel" name="phone" id="phone">
+			</fieldset>
+			<fieldset>
+				<legend>Additional Information</legend>
+
+				<p>Contacting because:</p>
+				
+				<label for="project"><input type="radio" name="contact" id="project" value="Possible Project">Possible Project</label>
+				
+				<label for="op"><input type="radio" name="contact" id="op" value="Opportunities">Opportunities</label>
+
+				<label for="other"><input type="radio" name="contact" id="other" value="Other">Other, please specify below</label>
+
+				<textarea name="otherta" id="otherta" rows="5" cols="35"></textarea>
+			</fieldset>
+			<input type="submit" id="submit" value="Submit" class="btn">
+		</form>
+	</div>
+</main>
+
+<footer>
+	<div class="copyright">
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p><a href = "mailto:ke.moore1@pack.csupueblo.edu">ke.moore1@pack.csupueblo.edu</a></p>
+	</div>
+	<div class="social">
+		<a href="https://www.facebook.com/profile.php?id=100005164486396" target="_blank">
+        		<img src="images/facebook-logo.png" alt="Facebook logo">
+      		</a>
+	</div>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>
